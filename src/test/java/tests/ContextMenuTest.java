@@ -5,9 +5,7 @@ import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
-
 import static org.testng.AssertJUnit.assertEquals;
-
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
@@ -25,4 +23,3 @@ public class ContextMenuTest extends BaseTest {
         driver.switchTo().alert().accept();
     }
 }
-
