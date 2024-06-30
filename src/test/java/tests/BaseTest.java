@@ -17,6 +17,7 @@ public class BaseTest {
     ContextMenuPage contextMenuPage;
     DynamicControlsPage dynamicControlsPage;
     FramesPage framesPage;
+    
     @BeforeMethod
     public void setup(){
         WebDriverManager.chromedriver().setup();
@@ -30,8 +31,8 @@ public class BaseTest {
         framesPage = new FramesPage(driver);
     }
 
-//    @AfterMethod
-//    public void close () {
-//        driver.quit();
-//    }
+    @AfterMethod
+    public void close () {
+        driver.quit();
+    }
 }
