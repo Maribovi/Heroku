@@ -25,7 +25,6 @@ public class BaseTest {
         options.addArguments("start-maximized");
         driver = new ChromeDriver(options);
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-
         contextMenuPage = new ContextMenuPage(driver);
         dynamicControlsPage = new DynamicControlsPage(driver);
         framesPage = new FramesPage(driver);
