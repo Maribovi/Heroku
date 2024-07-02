@@ -1,11 +1,11 @@
 package pages;
 import org.openqa.selenium.WebDriver;
 
-public class ContextMenuPage {
-    WebDriver driver;
+public class ContextMenuPage extends BasePage{
+
 
     public ContextMenuPage(WebDriver driver) {
-        this.driver = driver;
+        super(driver);
     }
     public void open() {
         driver.get("http://the-internet.herokuapp.com/context_menu");
